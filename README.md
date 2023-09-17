@@ -48,6 +48,8 @@ Berikut hasil dari model machine learning ini,
 
 
 ## Evaluation
-Untuk metrik evaluasi pada model house rent predictions ini adalah dengan metric='acc' pada model compile, seperti,
+Untuk metrik evaluasi pada model house rent predictions ini adalah dengan metric='acc' pada model compile, seperti, 
+![Cuplikan layar 2023-09-17 223300](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/15f1f643-894d-4578-9e98-3074c9aba51c)
 
-Hasil dari model compile tersebut, dimana accuracy sebesar 
+Hasil dari model compile tersebut, berikut adalah hasil prediksinya, ![Cuplikan layar 2023-09-17 223220](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/acdf58f2-293e-497f-ba98-d75e0a0f856b)
+
