@@ -12,7 +12,7 @@ Bagaimana cara memperkirakan/memprediksi harga sewa rumah (dataset di India) den
 ### Goals
 Dapat melakukan prediksi harga sewa rumah secara tepat. Dampak positif dari penggunaan machine learning untuk memperkirakan harga house rent ini ialah, memberikan gambaran secara garis besar berapa harga yang akan dikeluarkan untuk membeli satu unit rumah, dengan rincian seperti luas rumah, furniture, jumlah kamar, dan lainnya. 
 ### Solusion Statement
-menggunakan model machine learning regresi untuk memprediksi nilai numerik atau kontinu berdasarkan fitur atau variabel-variabel lainnya.
+menggunakan model machine learning regresi linear berganda untuk memprediksi nilai numerik atau kontinu berdasarkan fitur atau variabel-variabel lainnya. 
 
 ## Data Understanding
 dataset yang digunakan pada House Rent Predicion terdapat file csv yang di unduh di situs kaggle. Link dataset sebagai berikut: [Dataset](https://github.com/dinarrahman30/House_Rent_Prediction/blob/main/house_rent_prediction/House_Rent_Dataset.csv)
@@ -42,14 +42,24 @@ Data Preparation yang digunakan oleh saya adalah:
 
 ## Modeling
 
-Model machine learning yang saya gunakan adalah model regresi untuk memprediksi nilai numerik atau kontinu berdasarkan fitur atau variabel-variabel lainnya.
-Berikut hasil dari model machine learning ini,
-![Cuplikan layar 2023-09-11 222329](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/836b7299-b1d3-48bb-9795-b9591bc28bea)
+Model machine learning yang saya gunakan adalah model regresi linear untuk memprediksi nilai numerik atau kontinu berdasarkan fitur atau variabel-variabel lainnya. Model machine learning regresi yang dipakai ialah model regresi linear berganda. Model regresi linear sederhana ialah metode statistik yang digunakan untuk memodelkan hubungan antara satu variabel dependen dengan lebih dari dua variabel independen, yaitu variabel dependen (Y) dan independen (X1, X2,...). Model regresi linear berganda ini cocok untuk beberapa variabel independen yang mempengaruhi harga sewa secara linear misalnya, luas rumah, jumlah kamar, keberadaan perabotan, dan lainnya.
+
+Berikut hasil dari model machine learning ini, 
+![Cuplikan layar 2023-09-19 103051](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/cc85dedd-6db0-48be-8d94-ca4acc998bde)
+
+Gambar 1. Define model
+
+Pada gambar 1 menampilkan jenis model apa yang dipakai, yaitu LSTM.
 
 
 ## Evaluation
-Untuk metrik evaluasi pada model house rent predictions ini adalah dengan metric='acc' pada model compile, seperti, 
-![Cuplikan layar 2023-09-17 223300](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/15f1f643-894d-4578-9e98-3074c9aba51c)
+Untuk metrik evaluasi pada model house rent predictions ini adalah dengan metric='MSE' pada model compile, seperti, 
+![Cuplikan layar 2023-09-19 102435](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/71c36f03-0553-4bd0-b296-fee46fd69cb8)
+
+Gambar 2. Metrik evaluasi
+
+Pada gambar 2 menampilkan metrik evaluasi yang dipakai ialah, mean_square_error. 
+
 
 Hasil dari model compile tersebut, berikut adalah hasil prediksinya, ![Cuplikan layar 2023-09-17 223220](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/acdf58f2-293e-497f-ba98-d75e0a0f856b)
 
