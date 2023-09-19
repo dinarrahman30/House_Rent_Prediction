@@ -6,15 +6,15 @@ Proyek machine learning yang saya angkat adalah predictive analysis house rent p
 ## Business Understanding
 ### Problem Statement
 1. Bagaimana cara memperkirakan/memprediksi harga sewa rumah (dataset di India) dengan model machine learning kepada user?
+2. jenis model machine learning apa yang cocok digunakan untuk memprediksi harga sewa rumah di India?
 ### Goals
-Dapat melakukan prediksi harga sewa rumah secara tepat. Dampak positif dari penggunaan machine learning untuk memperkirakan harga house rent ini ialah, memberikan gambaran secara garis besar berapa harga yang akan dikeluarkan untuk membeli satu unit rumah, dengan rincian seperti luas rumah, furniture, jumlah kamar, dan lainnya. 
-### Solusion Statement
-menggunakan model machine learning regresi linear berganda untuk memprediksi nilai numerik atau kontinu berdasarkan fitur atau variabel-variabel lainnya. Model regresi linear sederhana ialah metode statistik yang digunakan untuk memodelkan hubungan antara satu variabel dependen dengan lebih dari dua variabel independen, yaitu variabel dependen (Y) dan independen (X1, X2,...). Model regresi linear berganda ini cocok untuk beberapa variabel independen yang mempengaruhi harga sewa secara linear misalnya, luas rumah, jumlah kamar, keberadaan perabotan, dan lainnya.
+1. Dapat melakukan prediksi harga sewa rumah secara tepat. Caranya penggunaan machine learning untuk memperkirakan harga house rent ini ialah, memasukkan data-data rincian ruma sewa yang ingin disewa, dengan isi rincian seperti luas rumah, kelengkapan furniture, jumlah kamar, dan lainnya.
+2. Dengan menggunakan model machine learning regresi linear berganda untuk memprediksi nilai numerik atau kontinu berdasarkan fitur atau variabel-variabel lainnya. Model regresi linear sederhana ialah metode statistik yang digunakan untuk memodelkan hubungan antara satu variabel dependen dengan lebih dari dua variabel independen, yaitu variabel dependen (Y) dan independen (X1, X2,...). Model regresi linear berganda ini cocok untuk beberapa variabel independen yang mempengaruhi harga sewa secara linear misalnya, luas rumah, jumlah kamar, keberadaan perabotan, dan lainnya.
 
 ## Data Understanding
 dataset yang digunakan pada House Rent Predicion terdapat file csv yang di unduh di situs kaggle. Link dataset sebagai berikut: [Dataset](https://github.com/dinarrahman30/House_Rent_Prediction/blob/main/house_rent_prediction/House_Rent_Dataset.csv)
 
-Untuk variable yang terdapat pada dataset antara lain sebagai berikut:
+Untuk keterangan variable yang terdapat pada dataset antara lain sebagai berikut:
 
 - BHK: Number of Bedrooms, Hall, Kitchen.
 - Rent: Rent of the Houses/Apartments/Flats.
@@ -28,11 +28,20 @@ Untuk variable yang terdapat pada dataset antara lain sebagai berikut:
 - Bathroom: Number of Bathrooms.
 - Point of Contact: Whom should you contact for more information regarding the Houses/Apartments/Flats.
 
-Tahapan yang digunakan mengenai data dengan melakukan eksploratory data analysis yaitu, melihat kondisi rumah yang akan disewa dengan variable Furnishing Status, Serta mengecek distribusi data rumah sewa yang ada di kota-kota India. Untuk ukuran dataset yang dipakai sebesar (4746, 12). Sementara untuk lisensi dari dataset ialah bersifat publik dan berkatogori dummies, namun dataset ini tetap dapat dijadikan preferensi simulasi dari prediksi harga sewa rumah di India.
+Tahapan yang digunakan mengenai data dengan melakukan eksploratory data analysis yaitu, melihat kondisi rumah yang akan disewa dengan variable Furnishing Status, Serta mengecek distribusi data rumah sewa yang ada di kota-kota India. Untuk ukuran dataset yang dipakai sebesar (4746, 12). Sementara untuk lisensi dari dataset ialah bersifat publik dan berkatogori dummies, namun dataset ini tetap dapat dijadikan preferensi simulasi dari prediksi harga sewa rumah di India. Untuk teknik visualisasi data apda bagian EDA, lebih bayak menggunakan visualisasi diagram batang dan pie, sepeti,
 
-![Ukuran dataset](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/57d225bb-2a8c-485e-83fa-09de808ea5dc)
+![diagram 1](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/fb0ab42b-5fea-4fcd-8881-22f11912c290)
 
-Gambar 1. Ukuran Dataset
+Gambar Diagram Batang 1. Bar Plot for Number of House in Each City which is Available for Rent.
+
+![diagram 2](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/4d639094-cdc8-48d8-81cb-d8aa226944e9)
+
+Gambar Diagram Batang 2. look at the rent of the houses in different cities according to the furnishing status of the house.
+
+![diagram 3](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/55608920-fc48-4572-aed1-15954d59b640)
+
+Gambar Diagram Pie. Pie Plot on Cities to check the distribution.
+
 
 ## Data Preparation
 Data Preparation yang digunakan oleh saya adalah:
@@ -41,7 +50,17 @@ Data Preparation yang digunakan oleh saya adalah:
 
 ## Modeling
 
-Model machine learning yang saya gunakan adalah model regresi linear untuk memprediksi nilai numerik atau kontinu berdasarkan fitur atau variabel-variabel lainnya. Model machine learning regresi yang dipakai ialah model regresi linear berganda. Model regresi linear sederhana ialah metode statistik yang digunakan untuk memodelkan hubungan antara satu variabel dependen dengan lebih dari dua variabel independen, yaitu variabel dependen (Y) dan independen (X1, X2,...). Model regresi linear berganda ini cocok untuk beberapa variabel independen yang mempengaruhi harga sewa secara linear misalnya, luas rumah, jumlah kamar, keberadaan perabotan, dan lainnya.
+Model machine learning yang saya gunakan adalah model regresi linear untuk memprediksi nilai numerik atau kontinu berdasarkan fitur atau variabel-variabel lainnya. Model machine learning regresi yang dipakai ialah model regresi linear berganda. Model regresi linear sederhana ialah metode statistik yang digunakan untuk memodelkan hubungan antara satu variabel dependen dengan lebih dari dua variabel independen, yaitu variabel dependen (Y) dan independen (X1, X2,...).
+
+Kelebihan dari model regresi linear berganda ini ialah,
+- Model regresi linear berganda ini cocok untuk beberapa variabel independen yang mempengaruhi harga sewa secara linear misalnya, luas rumah, jumlah kamar, keberadaan perabotan, dan lainnya.
+- Modelnya juga sederhana dan mudah untuk dipahami. Model ini cocok untuk mereka yang belajar machine learning awal.
+
+Kekurangan dari model regresi berganda ini adalah,
+
+- Terlalu sederhana, hasil yang didapat tidak sekompleks model machine learning lainnya.
+- Model ini juga sensitif terhadap adanya outlier dalam data. Poin data yang ekstrem dapat memengaruhi koefisien regresi dan kinerja model secara signifikan.
+- Rentan akan overfitting dan underfitting hasil. Resiko ini juga dapat ditemui di hampir semua model machine learning.
 
 Berikut hasil dari model machine learning ini, 
 ![Define Model](https://github.com/dinarrahman30/House_Rent_Prediction/assets/68122380/cc85dedd-6db0-48be-8d94-ca4acc998bde)
