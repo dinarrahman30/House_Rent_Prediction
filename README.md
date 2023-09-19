@@ -1,7 +1,7 @@
 # Laporan Proyek Machine Learning - Dinar Wahyu Rahman
 ## Domain Proyek
 
-Proyek machine learning yang saya angkat adalah predictive analysis house rent prediction. Penggunaan machine learning yang tepat dalam memprediksi harga sewa rumah sangatlah membantu. Banyak platform sewa rumah yang menggunakan machine learning untuk memudahkan pekerjaan mereka dan para pelanggan. Para pelanggan bisa memilih rumah sesuai dengan kendisi dan pendapatan keuangan masing-masing.
+Proyek machine learning yang saya angkat adalah predictive analysis house rent prediction. Penggunaan machine learning yang tepat dalam memprediksi harga sewa rumah sangatlah membantu. Banyak platform sewa rumah yang menggunakan machine learning untuk memudahkan pekerjaan mereka dan para pelanggan. Para pelanggan bisa memilih rumah sesuai dengan kendisi dan pendapatan keuangan masing-masing. Sebab tantangan dalam penyewaan rumah di India ini ialah harganya yang semakin melonjak naik, seiring dengan kepadatan penduduknya yang semakin bertambah kian tahun ke tahun. Banyaknya penduduk tidak sebanding dengan banyaknya pemukiman yang layak huni, membuat harga house rent semakin mahal. Dengan penggunaan machine learning ini, seseorang bisa memperkirakan besarnya biaya pemukiman/house rent yang sesuai dengan kapasitas keuangannya dan sesuai dengan preferensi hunian terbaiknya, seperti besarnya rumah, banyaknya kamar, sudah dilengkapi perabotan atau tidak, dan sebagainya.
 
 Referensi proyek: [Link jurnal](https://www.mdpi.com/2220-9964/8/8/349)
 
@@ -10,7 +10,7 @@ Referensi proyek: [Link jurnal](https://www.mdpi.com/2220-9964/8/8/349)
 Bagaimana cara memperkirakan/memprediksi harga sewa rumah (dataset di India) dengan model machine learning kepada user?
 
 ### Goals
-Dapat melakukan prediksi harga sewa rumah secara tepat.
+Dapat melakukan prediksi harga sewa rumah secara tepat. Dampak positif dari penggunaan machine learning untuk memperkirakan harga house rent ini ialah, memberikan gambaran secara garis besar berapa harga yang akan dikeluarkan untuk membeli satu unit rumah, dengan rincian seperti luas rumah, furniture, jumlah kamar, dan lainnya. 
 ### Solusion Statement
 menggunakan model machine learning regresi untuk memprediksi nilai numerik atau kontinu berdasarkan fitur atau variabel-variabel lainnya.
 
